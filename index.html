@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./indes.css" />
+  </head>
+
+  <body>
+    <section class="container my-4">
+      <h2 class="bg-success text-uppercase">Lay so thu tu tang dan</h2>
+      <div class="row justify-content-around mt-4">
+        <input
+          type="text"
+          class="col-3 form-control"
+          placeholder="nhap so thu 1"
+          id="num1"
+        />
+        <input
+          type="text"
+          class="col-3 form-control"
+          placeholder="nhap so thu 2"
+          id="num2"
+        />
+        <input
+          type="text"
+          class="col-3 form-control"
+          placeholder="nhap so thu 3"
+          id="num3"
+        />
+      </div>
+      <button class="btn btn-warning mt-3" onclick="onClickArangeNum()">
+        Sap xep
+      </button>
+      <p class="alert alert-success mt-3" id="result"></p>
+    </section>
+    <hr />
+    <div class="container mt-4">
+      <h3>Who use computer</h3>
+      <div class="text-capitalize">
+        <label for="computer">Who use</label>
+        <select name="computer" id="gettheans" class="form-control w-25">
+          <option value="dad">sugardaddy</option>
+          <option value="mom">sugarmommy</option>
+          <option value="sis">sugarsister</option>
+          <option value="bro">sugarbae</option>
+        </select>
+        <br />
+        <br />
+        <button class="btn btn-light" onclick="onClickHello()">submit</button>
+        <p class="alert alert-success mt-3" id="theHi"></p>
+      </div>
+    </div>
+    <hr />
+    <div class="container my-4">
+      <h3>Counting</h3>
+      <div class="row justify-content-between my-4">
+        <div class="col-3">
+          <input type="text" class="form-control" id="number1" />
+        </div>
+        <div class="col-3">
+          <input type="text" class="form-control" id="number2" />
+        </div>
+        <div class="col-3">
+          <input type="text" class="form-control" id="number3" />
+        </div>
+      </div>
+      <button class="btn btn-primary" id="" onclick="onClickCouting()">
+        Check
+      </button>
+      <p class="alert alert-info mt-3" id="couting"></p>
+    </div>
+    <hr />
+    <div class="container">
+      <h3>triangle</h3>
+      <div class="row my-4 justify-content-between">
+        <div class="col-3">
+          <input type="text" class="form-control" id="edge1" />
+        </div>
+        <div class="col-3">
+          <input type="text" class="form-control" id="edge2" />
+        </div>
+        <div class="col-3">
+          <input type="text" class="form-control" id="edge3" />
+        </div>
+      </div>
+      <button class="btn btn-secondary my-3" onclick="onClickGuess()">
+        Guess
+      </button>
+      <p class="alert alert-warning" id="kindOf"></p>
+    </div>
+    <hr />
+    <div class="container">
+      <h3>Date</h3>
+      <div class="row">
+        <div class="col-3">
+          <input type="number" class="form-control" id="days" />
+        </div>
+        <div class="col-3">
+          <input type="text" class="form-control" id="month" />
+        </div>
+        <div class="col-3">
+          <input type="text" class="form-control" id="years" />
+        </div>
+      </div>
+      <div class="row my-3">
+        <button class="btn btn-primary px-4 me-4" onclick="onClickyesterday()">
+          Yesterdays
+        </button>
+        <button class="btn btn-primary px-3" onclick="onClickTomorw()">
+          Tomorow
+        </button>
+      </div>
+      <p class="alert alert-success" id="getdate"></p>
+    </div>
+    <hr />
+    <div class="container my-4">
+      <h3>find the days</h3>
+      <div class="row">
+        <div class="col-3">
+          <input type="text" class="form-control" id="getMonth" />
+        </div>
+        <div class="col-3">
+          <input type="text" class="form-control" id="getYears" />
+        </div>
+        <div class="col-3">
+          <button class="btn btn-secondary" onclick="onClickfinddays()">
+            Checkdays
+          </button>
+        </div>
+      </div>
+      <p class="alert alert-dark mt-4" id="getResultDays"></p>
+    </div>
+    <hr />
+    <section class="container py-5">
+      <h3>Spell Number</h3>
+      <div class="row my-4">
+        <input type="number" class="col-3 form-control mx-3" id="spellNum" />
+        <button class="btn btn-secondary mx-4 rounded-pill" onclick="onSpellNumClick()" >  Doc so</button>
+      </div>
+      <p class="alert alert-danger " id="spellNumber"></p>
+    </section>
+    <hr>
+
+    <section class="container">
+        <h3>Get The Furthest</h3>
+        <div class="row my-5">
+            <h4 class="text-warning">Sinh Vien 1</h4>
+            <div class="col-3">
+                <input type="text" id="studentName1" class="form-control" placeholder="student1">
+            </div>
+            <div class="col-3">
+                <input type="text" id="studentX1" class="form-control" placeholder="Studen1X">
+            </div>
+            <div class="col-3">
+                <input type="text" id="studentY1" class="form-control" placeholder="student1y">
+            </div>
+        </div>
+        <div class="row my-5">
+            <h4 class="text-warning">Sinh Vien 2</h4>
+            <div class="col-3">
+                <input type="text" id="studentName2" class="form-control" placeholder="student2">
+            </div>
+            <div class="col-3">
+                <input type="text" id="studentX2" class="form-control" placeholder="Studen2X">
+            </div>
+            <div class="col-3">
+                <input type="text" id="studentY2" class="form-control" placeholder="student2y">
+            </div>
+        </div>
+        <div class="row my-5">
+            <h4 class="text-warning">Sinh Vien 3</h4>
+            <div class="col-3">
+                <input type="text" id="studentName3" class="form-control" placeholder="student3">
+            </div>
+            <div class="col-3">
+                <input type="text" id="studentX3" class="form-control" placeholder="Studen3X">
+            </div>
+            <div class="col-3">
+                <input type="text" id="studentY3" class="form-control" placeholder="student3y">
+            </div>
+        </div>
+        <div class="row my-5">
+            <h4 class="text-warning">The SchoOL</h4>
+            <div class="col-3">
+                <input type="text" id="schoollX" class="form-control" placeholder="schoollX">
+            </div>
+            <div class="col-3">
+                <input type="text" id="schoollY" class="form-control" placeholder="schoollY">
+            </div>
+           
+        </div>
+        <button class="btn  btn-outline-info" onclick="onCheckStudentClick()">Check</button>
+        <p class="alert alert-primary mt-4" id="furthest"></p>
+       
+    </section>
+  
+
+
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
