@@ -125,6 +125,13 @@ var newMonth;
 var newyears;
 
 function onClickyesterday() {
+  var days = Number(domId("days").value);
+var month = Number(domId("month").value);
+var years = Number(domId("years").value);
+var newdays=0;
+var newMonth=0;
+var newyears=0;
+
   if (days === 1) {
     if (month === 1) {
       newdays = 31;
@@ -146,9 +153,12 @@ function onClickyesterday() {
   }
 }
 function onClickTomorw() {
-  var newdays;
-  var newMonth;
-  var newyears;
+  var days = Number(domId("days").value);
+  var month = Number(domId("month").value);
+  var years = Number(domId("years").value);
+  var newdays=0;
+  var newMonth=0;
+  var newyears=0;
   if (days === 31) {
     if (month === 12) {
       newdays = 1;
